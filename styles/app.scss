@@ -1,0 +1,176 @@
+/* accordion stuff */
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+    width:250px;
+    border:solid black 5px;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:rgb(143, 166, 69);
+    /* Type */
+    text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+
+    display:none;
+}
+
+.accordion-section-content span{
+
+  font-weight: bold;
+
+}
+.pcontainer{
+  display: inline-block;
+  margin:0;
+  padding-top:5px;
+  padding-bottom: 5px;
+    border:black solid 1px;
+    width:100%;
+}
+.pcontainer span:nth-child(1){
+font-size: 10px;
+margin-left:20px;
+color:grey;
+}
+.pcontainer span:nth-child(2){
+margin-left:20px;
+}
+.pcontainer span:nth-child(3){
+border: black 1px solid;
+border-radius:10px;
+float:right;
+margin-right:10px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.accordion-section-title span:nth-child(1){
+font-size: 10px;
+margin-left:20px;
+color:grey;
+}
+.accordion-section-title span:nth-child(2){
+margin-left:20px;
+}
+.accordion-section-title span:nth-child(3){
+border: black 1px solid;
+border-radius:10px;
+float:right;
+padding-left: 10px;
+padding-right: 10px;
+}
+img{
+  width:20px;
+  height: 20px;
+}
+
+
+
+/* Calender stuff */
+#Calender{
+  margin:20px auto;
+  width:400px;
+  height:400px;
+  background-color:black;
+}
+#calheader{
+text-align: center;
+  span{
+  font-size: 15px;
+  }
+  border-bottom:solid white 3px;
+  width:80%;
+  margin:0 auto;
+  padding:10px;
+}
+.dot{
+  width:5px;
+  height:5px;
+  border-radius: 10px;
+  background-color: green;
+    display: inline-block;
+    margin: 5px;
+}
+#year{
+  color:white;
+}
+.daysofweek{
+  width:80%;
+margin-left:35px;
+margin-top:10px;
+font-weight: bold;
+}
+.daysofweek span{
+  margin-left: 22px;
+color:white;
+width:20px;
+display: inline-block;
+}
+.daysofweek h4{
+  margin-left: 22px;
+color:white;
+width:20px;
+font-size:10px;
+display: inline-block;
+}
+.highlight{
+  border:green solid 1px;
+  color:green;
+}
+.dateday{
+    padding:5px;
+}
+.leftarrow{
+  float:left;
+}
+.rightarrow{
+  float:right;
+}
